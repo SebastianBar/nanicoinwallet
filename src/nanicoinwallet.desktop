@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=NaniCoin Wallet
+Comment=NaniCoin wallet
+Exec=NaniCoin %U
+Terminal=false
+Type=Application
+Icon=nanicoin
+MimeType=x-scheme-handler/nanicoin;
+Categories=Office;Finance;
