@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=NaniCoin Wallet
-Comment=NaniCoin wallet
+Name=Monedero NaniCoin
+Comment=Monedero NaniCoin
 Exec=NaniCoin %U
 Terminal=false
 Type=Application
