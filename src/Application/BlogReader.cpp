@@ -34,7 +34,7 @@ namespace WalletGui {
 namespace {
 
 const char BLOG_RSS_SCHEME[] = "https";
-const char BLOG_RSS_HOST[] = "nanicoin.cl";
+const char BLOG_RSS_HOST[] = "nanicoin.me";
 const char BLOG_RSS_PATH[] = "/feed/atom/";
 
 const char BLOG_RSS_ID_TAG_NAME[] = "id";
