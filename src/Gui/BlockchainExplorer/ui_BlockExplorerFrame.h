@@ -344,7 +344,7 @@ public:
         m_nextPageButton->setText(QString());
         m_topButton->setText(QApplication::translate("BlockExplorerFrame", "Volver arriba", 0));
         m_blockExplorerTabBar->setTabText(m_blockExplorerTabBar->indexOf(m_blockchainTab), QApplication::translate("BlockExplorerFrame", "Blockchain", 0));
-        m_blockExplorerTabBar->setTabText(m_blockExplorerTabBar->indexOf(m_transactionPoolTab), QApplication::translate("BlockExplorerFrame", "Pool de transacciones", 0));
+        m_blockExplorerTabBar->setTabText(m_blockExplorerTabBar->indexOf(m_transactionPoolTab), QApplication::translate("BlockExplorerFrame", "Transacciones de pool", 0));
     } // retranslateUi
 
 };

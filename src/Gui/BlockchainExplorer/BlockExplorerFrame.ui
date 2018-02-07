@@ -477,7 +477,7 @@
      </widget>
      <widget class="QWidget" name="m_transactionPoolTab">
       <attribute name="title">
-       <string>Pool de transacciones</string>
+       <string>Transacciones de pool</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <property name="spacing">
