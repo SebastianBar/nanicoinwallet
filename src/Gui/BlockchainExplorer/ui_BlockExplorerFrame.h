@@ -172,7 +172,7 @@ public:
         m_filterBeginDtedit = new QDateTimeEdit(m_filterPeriodFrame);
         m_filterBeginDtedit->setObjectName(QStringLiteral("m_filterBeginDtedit"));
         m_filterBeginDtedit->setEnabled(true);
-        m_filterBeginDtedit->setLocale(QLocale(QLocale::English, QLocale::UnitedStates));
+        m_filterBeginDtedit->setLocale(QLocale(QLocale::Spanish, QLocale::Chile));
         m_filterBeginDtedit->setCalendarPopup(true);
         m_filterBeginDtedit->setTimeSpec(Qt::UTC);
 
@@ -186,7 +186,7 @@ public:
         m_filterEndDtedit = new QDateTimeEdit(m_filterPeriodFrame);
         m_filterEndDtedit->setObjectName(QStringLiteral("m_filterEndDtedit"));
         m_filterEndDtedit->setEnabled(true);
-        m_filterEndDtedit->setLocale(QLocale(QLocale::English, QLocale::UnitedStates));
+        m_filterEndDtedit->setLocale(QLocale(QLocale::Spanish, QLocale::Chile));
         m_filterEndDtedit->setCalendarPopup(true);
         m_filterEndDtedit->setTimeSpec(Qt::UTC);
 

@@ -383,7 +383,7 @@ QVariant TransactionsModel::getDisplayRoleData(const QModelIndex &_index) const 
     CryptoNote::WalletTransactionState transactionState =
       static_cast<CryptoNote::WalletTransactionState>(_index.data(ROLE_STATE).value<quint8>());
     QDateTime date = _index.data(ROLE_TIME).toDateTime();
-    return (date.isNull() || !date.isValid() ? "-" : QLocale(QLocale::English).toString(date, "dd MMM yyyy, HH:mm:ss"));
+    return (date.isNull() || !date.isValid() ? "-" : QLocale(QLocale::Spanish).toString(date, "dd MMM yyyy, HH:mm:ss"));
   }
 
   case COLUMN_HASH:

@@ -241,7 +241,7 @@ void WalletStatusBar::updateStatusDescription() {
   quint64 timeDiff = lastLocalBlockTimestamp.msecsTo(currentDateTime);
   QString warningString;
   if (timeDiff > MSECS_IN_HOUR) {
-    warningString.append(QString(" Advertencia: el ultimo bloque fue recibido %1 horas y %2 minutos atrás.").
+    warningString.append(QString(" Advertencia: el último bloque fue recibido %1 horas y %2 minutos atrás.").
       arg(timeDiff / MSECS_IN_HOUR).arg((timeDiff % MSECS_IN_HOUR) / MSECS_IN_MINUTE));
   }
 
@@ -249,9 +249,9 @@ void WalletStatusBar::updateStatusDescription() {
     warningString.append(tr(" No hay conexión a la red NaniCoin."));
   }
 
-  QString statusText = tr("Monedero sincronizado. Altura del ultimo bloque: %1  /  Tiempo (UTC): %2%3");
+  QString statusText = tr("Monedero sincronizado. Altura del último bloque: %1  /  Tiempo (UTC): %2%3");
   m_syncStatusLabel->setText(statusText.arg(localBlockCount - 1).
-    arg(QLocale(QLocale::English).toString(lastLocalBlockTimestamp, "dd MMM yyyy, HH:mm:ss")).
+    arg(QLocale(QLocale::Spanish).toString(lastLocalBlockTimestamp, "dd MMM yyyy, HH:mm:ss")).
     arg(warningString));
 }
 

@@ -70,6 +70,9 @@
       </property>
       <item>
        <widget class="QCheckBox" name="m_newsCheck">
+        <property name="enabled">
+          <bool>true</bool>
+        </property>
         <property name="text">
          <string>Quiero ver noticias de NaniCoin</string>
         </property>
@@ -78,7 +81,7 @@
       <item alignment="Qt::AlignTop">
        <widget class="WalletGui::WalletSmallGrayTextLabel" name="m_embeddedHelperLabel">
         <property name="text">
-         <string>Marcando esta casilla resultará en una vista general actualizada. Ahora te mostrará las últimas publicaciones de NaniCoin, otorgándote las últimas noticias de NaniCoin.</string>
+         <string>Marcando esta casilla resultará en una vista general actualizada. Mostrará las últimas publicaciones de NaniCoin, otorgándote las últimas noticias de nuestra moneda, o información que pueda ser relevante para ti.</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>

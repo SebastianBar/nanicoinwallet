@@ -174,7 +174,7 @@ QVariant NodeStateModel::getDisplayRole(const QModelIndex& _index) const {
       return tr("Desconocido");
     }
 
-    return QLocale(QLocale::English).toString(QDateTime::fromTime_t(m_lastLocalBlockInfo.timestamp).toUTC(), "dd MMM yyyy, HH:mm:ss");
+    return QLocale(QLocale::Spanish).toString(QDateTime::fromTime_t(m_lastLocalBlockInfo.timestamp).toUTC(), "dd MMM yyyy, HH:mm:ss");
   case COLUMN_LAST_LOCAL_BLOCK_DIFFICULTY:
     return QString::number(m_lastLocalBlockInfo.difficulty);
   case COLUMN_NETWORK_HASHRATE:

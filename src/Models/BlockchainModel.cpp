@@ -190,7 +190,7 @@ QVariant BlockchainModel::data(const QModelIndex &_index, int _role) const {
         return "-";
       }
 
-      return QLocale(QLocale::English).toString(time, "dd MMM yyyy, hh:mm:ss");
+      return QLocale(QLocale::Spanish).toString(time, "dd MMM yyyy, hh:mm:ss");
     }
 
     case COLUMN_BLOCK_DIFFICULTY:
@@ -213,7 +213,7 @@ QVariant BlockchainModel::data(const QModelIndex &_index, int _role) const {
       return m_cryptoNoteAdapter->formatUnsignedAmount(_index.data(ROLE_BLOCK_BASE_REWARD).value<quint64>());
     case COLUMN_BLOCK_REWARD_PENALTY: {
       qreal penalty = _index.data(ROLE_BLOCK_REWARD_PENALTY).value<qreal>() * 100;
-      return penalty == 0 ? tr("No") : QLocale(QLocale::English).toString(penalty, 'f').append(" %");
+      return penalty == 0 ? tr("No") : QLocale(QLocale::Spanish).toString(penalty, 'f').append(" %");
     }
 
     case COLUMN_BLOCK_REWARD:
@@ -234,11 +234,11 @@ QVariant BlockchainModel::data(const QModelIndex &_index, int _role) const {
       return _index.data(ROLE_TRANSACTION_MIXIN);
     case COLUMN_TRANSACTION_UNLOCK_TIME: {
       QDateTime time = _index.data(ROLE_TRANSACTION_UNLOCK_TIME).toDateTime();
-      return QLocale(QLocale::English).toString(time, "dd MMM yyyy, hh:mm:ss");
+      return QLocale(QLocale::Spanish).toString(time, "dd MMM yyyy, hh:mm:ss");
     }
     case COLUMN_TRANSACTION_TIME: {
       QDateTime time = _index.data(ROLE_TRANSACTION_UNLOCK_TIME).toDateTime();
-      return QLocale(QLocale::English).toString(time, "dd MMM yyyy, hh:mm:ss");
+      return QLocale(QLocale::Spanish).toString(time, "dd MMM yyyy, hh:mm:ss");
     }
     case COLUMN_TRANSACTION_PAYMENT_ID: {
       QByteArray payment_id = _index.data(ROLE_TRANSACTION_PAYMENT_ID).toByteArray();

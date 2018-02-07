@@ -230,7 +230,7 @@ void SendFrame::urlReceived(const QUrl& _url) {
 
   QUrlQuery urlQuery(_url);
   QString address = _url.path();
-  qreal amount = QLocale(QLocale::English).toDouble(m_cryptoNoteAdapter->formatUnsignedAmount(urlQuery.queryItemValue(PAYMENT_URL_AMOUNT_TAG).toULongLong()));
+  qreal amount = QLocale(QLocale::Spanish).toDouble(m_cryptoNoteAdapter->formatUnsignedAmount(urlQuery.queryItemValue(PAYMENT_URL_AMOUNT_TAG).toULongLong()));
   QString paymentId = urlQuery.queryItemValue(PAYMENT_URL_PAYMENT_ID_TAG);
   QString message = urlQuery.queryItemValue(PAYMENT_URL_MESSAGE_TAG);
   Q_UNUSED(message)

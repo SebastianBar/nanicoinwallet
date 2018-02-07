@@ -245,7 +245,7 @@ QVariant TransactionPoolModel::getDisplayRole(const QModelIndex& _index) const {
       return "-";
     }
 
-    return QLocale(QLocale::English).toString(time, "dd MMM yyyy, hh:mm:ss");
+    return QLocale(QLocale::Spanish).toString(time, "dd MMM yyyy, hh:mm:ss");
   }
 
   case COLUMN_AMOUNT:

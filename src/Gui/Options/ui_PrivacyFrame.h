@@ -59,6 +59,7 @@ public:
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
         m_newsCheck = new QCheckBox(widget_2);
         m_newsCheck->setObjectName(QStringLiteral("m_newsCheck"));
+        m_newsCheck->setEnabled(true);
 
         verticalLayout_2->addWidget(m_newsCheck);
 

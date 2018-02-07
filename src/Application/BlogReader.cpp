@@ -58,7 +58,7 @@ BlogReader::~BlogReader() {
 }
 
 QString BlogReader::getName() const {
-  return tr("NaniCoin Blog:");
+  return tr("Noticias NaniCoin:");
 }
 
 QPixmap BlogReader::getIcon() const {

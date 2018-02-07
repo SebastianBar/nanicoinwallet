@@ -371,11 +371,11 @@ quint64 Settings::getOptimizationMixin() const {
 bool Settings::isNewsEnabled() const {
   QReadLocker lock(&m_lock);
   if (!m_settings.contains(OPTION_PRIVACY_PARAMS)) {
-    return false;
+    return true;
   }
 
   QJsonObject privacyParams = m_settings.value(OPTION_PRIVACY_PARAMS).toObject();
-  return privacyParams.contains(OPTION_PRIVACY_NEWS_ENABLED) ? privacyParams.value(OPTION_PRIVACY_NEWS_ENABLED).toBool() : false;
+  return privacyParams.contains(OPTION_PRIVACY_NEWS_ENABLED) ? privacyParams.value(OPTION_PRIVACY_NEWS_ENABLED).toBool() : true;
 }
 
 quint16 Settings::getLocalRpcPort() const {
@@ -433,7 +433,7 @@ QString Settings::getVersion() const {
 
 QString Settings::getCurrentTheme() const {
   QReadLocker lock(&m_lock);
-  return m_settings.contains(OPTION_WALLET_THEME) ? m_settings.value(OPTION_WALLET_THEME).toString() : "light";
+  return m_settings.contains(OPTION_WALLET_THEME) ? m_settings.value(OPTION_WALLET_THEME).toString() : "dark";
 }
 
 QStringList Settings::getRecentWalletList() const {

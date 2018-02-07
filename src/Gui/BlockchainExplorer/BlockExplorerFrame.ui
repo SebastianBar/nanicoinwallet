@@ -276,7 +276,7 @@
                   <bool>true</bool>
                  </property>
                  <property name="locale">
-                  <locale language="English" country="UnitedStates"/>
+                  <locale language="Spanish" country="Chile"/>
                  </property>
                  <property name="displayFormat">
                   <string>dd MMM yyyy, hh:mm</string>
@@ -302,7 +302,7 @@
                   <bool>true</bool>
                  </property>
                  <property name="locale">
-                  <locale language="English" country="UnitedStates"/>
+                  <locale language="Spanish" country="Chile"/>
                  </property>
                  <property name="displayFormat">
                   <string>dd MMM yyyy, hh:mm</string>
